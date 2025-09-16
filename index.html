@@ -77,6 +77,35 @@
       font-size: 14px;
       color: #888;
     }
+    .featured {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 20px;
+      align-items: start;
+      background: #1a1a1a;
+      border: 1px solid #2e2e2e;
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 14px;
+    }
+    .featured img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #2e2e2e;
+    }
+    .badge {
+      display: inline-block;
+      background: #2b6cb0;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    @media (max-width: 800px) {
+      .featured { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -93,6 +122,24 @@
 
 <h2>Summary</h2>
 <p>Cybersecurity specialist and public speaker with 7+ years in emerging technologies, specializing in blockchain forensics, digital asset tracing, and AI-driven threat intelligence. I lead investigative teams, develop OSINT methodologies, and deliver accessible education on Web3 and cybersecurity to both technical and non-technical audiences.</p>
+
+<h2>Current Engagement</h2>
+<div class="featured">
+  <div>
+    <div class="badge">City Government of Davao</div>
+    <div class="event-title">5‑Day Intensive Technical Cybersecurity Training</div>
+    <p>
+      Our team is delivering a hands-on program covering cybersecurity awareness, risk frameworks,
+      attacks and defenses, and incident response—culminating in a capstone simulation and a
+      practical cybersecurity roadmap.
+    </p>
+    <p><strong>Why it matters:</strong> Strengthening LGU capacity in cybersecurity safeguards citizen data and ensures resilient public services.</p>
+  </div>
+  <div>
+    <img src="assets/davao-training.jpeg" alt="Cybersecurity training session with the City Government of Davao">
+  </div>
+  
+</div>
 
 <h2>Experience</h2>
 <p><strong>Blockchain Investigator</strong> | AnChain.AI | May 2023 - Present</p>
